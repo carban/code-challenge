@@ -26,3 +26,25 @@ Add also to your array the painting thumbnails present in the result page file (
 Test against 2 other similar result pages to make sure it works against different layouts. (Pages that contain the same kind of carrousel. Don't necessarily have to be paintings.)
 
 The suggested time for this challenge is 4 hours. But, you can take your time and work more on it if you want.
+
+## Solution
+
+First, install some dependencies:
+
+```bash
+bundle install
+```
+
+To run the parser, execute: 
+
+```bash
+ruby parser.rb
+```
+
+It will look for the file name inside the inputs/ folder. By default, it is "van-gogh-paintings". The parser will create a .json file in the results/ folder with the name of the input you used. In this case, the result will be: van-gogh-paintings-result.json.
+
+To run the tests, just execute:
+
+```bash
+rspec spec/test.rb
+```
