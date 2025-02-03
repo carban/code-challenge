@@ -38,7 +38,7 @@ bundle install
 To run the parser, execute: 
 
 ```bash
-ruby parser.rb
+ruby scraper.rb
 ```
 
 It will look for the file name inside the inputs/ folder. By default, it is "van-gogh-paintings". The parser will create a .json file in the results/ folder with the name of the input you used. In this case, the result will be: van-gogh-paintings-result.json.
